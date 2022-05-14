@@ -1,0 +1,70 @@
+@media( max-width:1305px){
+    .info-left{
+        order: 1;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .info-right{
+        order: 0;
+        padding-left: 90px;
+    }
+    
+    .info-right img{
+        width: 80%;
+    }
+
+    .container-about{
+        justify-content: center;
+        width: 100%;
+        margin: 5vh 0 20vh 0;
+    }
+
+    .inf-aboutme{
+        font-size: 25px;
+        text-align: center;
+        width: 85vh;
+    }
+
+    .botao-link a{
+        padding: 5px 10px;
+        margin: 0 10px;
+    }
+
+    .botao-link{
+        padding: 0;
+        margin: 40px 10px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px){
+    .inf-habilidades img{
+        width: 12vh;
+    }
+
+    .card-img{
+        top: -10px;
+    }
+
+    .card-img img{
+        width: 100%;
+    }
+
+    .botao-link{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao-link a{
+        margin: 15px 0;
+    }
+}

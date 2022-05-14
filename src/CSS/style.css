@@ -1,0 +1,281 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 15px;
+    height: 12vh;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border: 3px solid #36BFB1;
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+
+header ion-icon{
+    font-size: 40px;
+    padding-left: 40px;
+}
+
+.logo{
+    padding: 5px 10px;
+}
+
+.container-about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15vh 0;
+}
+
+body{
+    background: linear-gradient(45deg, #005826,#00A447,#003E1B, #07080D);
+    animation: change 5s ease-in-out infinite;
+    background-size: 400% 400%;
+}
+
+.info-left{
+    order: 0;
+    width: 80vh;
+    color: #fff;
+    font-size: 35px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-right{
+    width: 90vh;
+    animation: float 3s ease-in-out infinite;
+    order: 1;
+}
+
+.info-right img{
+    width: 100%;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.botao-link a{
+    margin: 15px 20px;
+    text-decoration: none;
+    background-color: #07080D;
+    color: #fff;
+    font-size: 38px;
+    padding: 15px 25px;
+    border-radius: 35px;
+}
+
+.botao-link{
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+.tag-inf{
+    font-size: 10px;
+    opacity: 15%;
+    font-family: 'Dancing Script', cursive;
+}
+
+.about-me{
+    display: flex;
+    max-width: 190vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inf-habilidades img{
+    width: 15vh;
+    margin-top: 15px;
+}
+
+.inf-habilidades{
+    margin-top: 10vh;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.inf-aboutme{
+    font-size: 30px;
+    color: #fff;
+    width: 110vh;
+}
+
+.gradient-port{
+    width: 100%;
+    height: 5vh;
+    background: linear-gradient(360deg, #07080D, transparent);
+    margin-top: 10vh;
+}
+
+.portfolio-inf{
+    background-color: #07080D;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-text{
+    color: #d9d9d9;
+    font-size: 25px;
+    text-align: center;
+    background-color: #07080D;
+    padding-top: 25px;
+}
+
+
+.portfolio-card-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-portfolio{
+    margin: 50px 50px;
+    color: #d9d9d9;
+    width: 45vh;
+    text-align: center;
+    border-radius: 15vh;
+    position: relative;
+    background: rgba( 0, 0, 0, 0.3 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 30px 30px 80px 80px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 70vh;
+}
+
+.card-portfolio-inf{
+    font-size: 25px;
+    align-items: center;
+    background-color: #00A447;
+    border-radius: 0px 0px 60px 60px;
+    padding: 15px 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+
+.link-port{
+    height: 40px;
+    width: 25vh;
+    border: 2px solid #d9d9d9;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+
+.link-port a{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+.card-img {
+    position: relative;
+    height: 40vh;
+    top: 0px;
+}
+
+.card-img img{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 40px;
+}
+
+.formulario{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #07080D;
+    align-items: center;
+}
+
+.formulario textarea{
+    resize: vertical;
+    max-height: 30vh;
+    height: 30vh;
+}
+
+.form{
+    height: 60vh;
+    background-color: #005826;
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #00A447;
+}
+
+.form input, .form textarea, .form button{
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.form input, .form textarea{
+    border: 1px solid transparent;
+}
+
+.form label{
+    color: #fff;
+}
+
+.form::before{
+    content: 'Me envie um E-mail';
+    color: #fff;
+    padding: 25px;
+    font-size: 65px;
+}
+
+header nav ul li:hover{
+    box-shadow: 0 0 5px #36BFB1;
+    transform: translateY(-10px);
+}
+
+.botao-link a:hover{
+    border: 2px solid #dadada;
+}
+
+.link-port:hover{
+    background-color: #07080D;
+    transform: scale(1.15);
+}
